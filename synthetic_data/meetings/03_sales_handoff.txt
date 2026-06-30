@@ -1,0 +1,10 @@
+[L01] Irene: Sales closed the BrightLedger pilot and we need a clean handoff.
+[L02] Omar: Customer success needs success criteria before kickoff.
+[L03] Irene: Decision: kickoff will be next Tuesday at 10:00 with Digital Channels.
+[L04] Chen: Implementation needs API credentials and the sandbox tenant by Monday.
+[L05] Omar: I will draft the customer kickoff agenda by end of day.
+[L06] Irene: Chen owns sandbox tenant setup by Monday noon.
+[L07] Chen: Risk: security review for API credentials may take more than two days.
+[L08] Irene: Action: I will ask Security to prioritize the credential review today.
+[L09] Omar: Open question: should Legal join kickoff because the NDA had Delaware jurisdiction?
+[L10] Irene: Add Legal as optional attendee and confirm by Friday.

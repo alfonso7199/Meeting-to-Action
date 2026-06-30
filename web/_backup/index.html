@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MeetingToAction</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body>
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-meeting" viewBox="0 0 24 24"><path d="M8 11a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm8 0a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM4 20v-2a4 4 0 0 1 8 0v2m0 0v-2a4 4 0 0 1 8 0v2" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7L8 5Z" fill="currentColor"/></symbol>
+      <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 13 4 4 10-10" fill="none" stroke="currentColor" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+      <symbol id="i-alert" viewBox="0 0 24 24"><path d="M12 4 3 20h18L12 4Z" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 10v4m0 3h.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+      <symbol id="i-send" viewBox="0 0 24 24"><path d="m21 3-7 18-4-8-8-4 19-6Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+      <symbol id="i-list" viewBox="0 0 24 24"><path d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    </defs>
+  </svg>
+
+  <header class="topbar">
+    <div class="brand">
+      <span><svg><use href="#i-meeting"/></svg></span>
+      <div>
+        <strong>MeetingToAction</strong>
+        <small>Meetings into execution packs</small>
+      </div>
+    </div>
+    <div class="badge">Non-Top15 concept</div>
+  </header>
+
+  <main class="shell">
+    <section class="intro">
+      <p>Experimental Track 2 angle</p>
+      <h1>From meeting transcript to approved follow-up, project updates and owners.</h1>
+      <div class="metrics">
+        <div><strong>3</strong><span>demo meetings</span></div>
+        <div><strong>4</strong><span>agent stages</span></div>
+        <div><strong>L#</strong><span>line citations</span></div>
+      </div>
+    </section>
+
+    <section class="workspace">
+      <div class="panel input-panel">
+        <div class="panel-title">
+          <h2>Transcript intake</h2>
+          <p>Select a synthetic meeting or paste your own transcript.</p>
+        </div>
+        <fieldset>
+          <legend>Demo meetings</legend>
+          <div id="examples" class="chips"></div>
+        </fieldset>
+        <label for="text">Transcript</label>
+        <textarea id="text" rows="13" placeholder="[L01] Name: Decision or action..."></textarea>
+        <input id="files" type="file" multiple accept=".txt,.md,.eml" />
+        <label for="files" class="file-label">Add transcript files</label>
+        <ul id="file-list" class="file-list"></ul>
+        <button id="run" disabled><svg><use href="#i-play"/></svg>Build action pack</button>
+        <p id="hint" role="alert"></p>
+      </div>
+
+      <div class="panel trace-panel">
+        <div class="panel-title">
+          <h2>Agent trace</h2>
+          <p id="status" aria-live="polite">Waiting for transcript.</p>
+        </div>
+        <ol id="timeline" class="timeline">
+          <li data-step="evidence">Evidence intake</li>
+          <li data-step="extract">ExtractorAgent</li>
+          <li data-step="plan">PlannerAgent</li>
+          <li data-step="followup">FollowUpAgent</li>
+          <li data-step="ready">Human review</li>
+        </ol>
+        <ul id="evidence" class="evidence"></ul>
+      </div>
+
+      <div id="results" class="panel results-panel">
+        <div class="empty">
+          <svg><use href="#i-list"/></svg>
+          <h2>Action pack</h2>
+          <p>Decisions, owners, risks, follow-up email and audit trail will appear here.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+[L01] Elena: This is the incident review for the payment delay on June 17.
+[L02] Sam: Root cause appears to be a retry queue misconfiguration after the deployment.
+[L03] Noor: Decision: we will keep the new deployment guardrail enabled for all payment services.
+[L04] Sam: I will patch the retry queue config today and add a unit test by tomorrow.
+[L05] Elena: Noor, please prepare the client-facing incident summary by 16:00.
+[L06] Noor: Agreed. I need exact impact numbers from analytics.
+[L07] Elena: Action: Analytics team will confirm affected transaction count by 14:00.
+[L08] Sam: Risk: the old queue worker may still be running in staging.
+[L09] Elena: Add a verification task for staging and production parity.
+[L10] Noor: Decision: no public status page update unless impact exceeds 1,000 transactions.
+[L11] Elena: Open question: who owns the long-term runbook update?

@@ -1,0 +1,12 @@
+[L01] Priya: We need to lock the beta launch date for the SME lending portal.
+[L02] Marco: Engineering can ship the risk-scoring API by July 8 if UAT starts June 28.
+[L03] Ana: Compliance needs the updated model disclosure text before UAT begins.
+[L04] Priya: Decision: beta launch stays July 15, but UAT must start June 28.
+[L05] Marco: I will send the API readiness checklist by June 21, 2026.
+[L06] Ana: I own the model disclosure update and will deliver it by June 25, 2026.
+[L07] Luis: Support needs training material at least one week before beta.
+[L08] Priya: Good point. Luis owns support training draft by July 3, 2026.
+[L09] Marco: Risk: vendor sandbox access is still pending and could block UAT.
+[L10] Priya: Action: I will escalate sandbox access to procurement today, June 19, 2026.
+[L11] Ana: Open question: do we need legal approval for the customer-facing model note?
+[L12] Priya: Let's follow up with Legal and include it in the launch tracker.
